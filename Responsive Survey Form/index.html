@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        </style>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Final excercise of building a survey form in freeCodeCamp by Dario
+      Poddighe. The theme/desing is a tribute to MGS 3 Snake Eater!
+    </p>
+
+    <form action="#" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >First Name:
+          <input type="text" id="name" required placeholder="Enter your name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+        /></label>
+        <label for="age" id="number-label"
+          >Age:
+          <input
+            type="number"
+            id="number"
+            required
+            min="13"
+            max="120"
+            title="Enter your age"
+            placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <p>Are you satisfied with this form?</p>
+        <select name="satisfaction" id="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">Yes! it rocks.</option>
+          <option value="2">Nop...lame</option>
+        </select>
+
+        <input class="inline" type="radio" value="button1" name="radio-button"  /> Radio Button 1
+        <input class="inline" type="radio" value="button2" name="radio-button"/> Radio Button 2
+        <input class="inline" type="checkbox" value="check1" name="check1" id="checkbox" />
+        Check this out!
+        <input class="inline" type="checkbox" value="check2" name="check2" id="checkbox" /> Or
+        this one
+        <input class="inline" type="checkbox" value="check3" name="check3" id="checkbox" />
+        Maybe this one
+        <input class="inline" type="checkbox" value="check4" name="check4" id="checkbox" /> Or
+        this one
+      </fieldset>
+      <fieldset>
+        <textarea name="comments" id="textarea" cols="50" rows="10">
+Enter additional comments</textarea
+        >
+      </fieldset>
+
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
+
